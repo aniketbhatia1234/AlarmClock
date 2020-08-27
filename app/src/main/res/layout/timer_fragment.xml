@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/countdown"
+        android:layout_width="295dp"
+        android:layout_height="295dp"
+        android:background="@drawable/timerdesign"
+        android:gravity="center"
+        android:text="00:00"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.422" />
+
+
+    <Button
+        android:id="@+id/starttimer"
+        android:layout_width="94dp"
+        android:layout_height="50dp"
+        android:background="@drawable/buttonstyle"
+        android:text="start Timer"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.773" />
+
+    <Button
+        android:id="@+id/resettimer"
+        android:layout_width="94dp"
+        android:layout_height="50dp"
+        android:background="@drawable/buttonstyle"
+        android:text="reset"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.881"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/gettimemins"
+        android:layout_width="51dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="Mins"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.383"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <EditText
+        android:id="@+id/gettimesecs"
+        android:layout_width="51dp"
+        android:layout_height="49dp"
+        android:ems="10"
+        android:hint="Secs"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.61"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="9dp"
+        android:layout_height="60dp"
+        android:text=":"
+        android:textColor="#040404"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.107" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
